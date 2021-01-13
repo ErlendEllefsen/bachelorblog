@@ -6,3 +6,5 @@ Først på agendaen nå er å få på plass en bacheloroppgave og deretter skriv
 
 
 *Denne nettsiden kjøres gratis på Heroku. Siden skrus av når den er inaktiv over lengre tid, så det kan derfor noen ganger ta ~10sek å åpne siden*
+
+[Blogg](https://bachelorblog.herokuapp.com/)
