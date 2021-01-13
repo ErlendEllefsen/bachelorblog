@@ -16,13 +16,13 @@
         <h1 class="mb-4 mt-4">Bachelor Blog</h1>
         <p class="text-muted mb-4">Erlend Ellefsen & Robin Ellingsen</p>
         <% articles.forEach(article=> { %>
-            <div class="card mt-4 bg-dark">
+            <div class="card mt-4 bg-dark" style="border-radius: 5px;">
                 <div class="card-body">
                     <h4 class="card-title">
                         <%= article.title %>
                     </h4>
                     <div class="card-subtitle text-muted mb-2">
-                        <%= article.createdAt.toGMTString() %>
+                        <%= article.createdAt.toGMTString() %> - <%= article.author %>
                     </div>
                     <div class="card-text mb-2">
                         <%= article.description %>
