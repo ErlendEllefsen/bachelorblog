@@ -10,9 +10,9 @@
     <title>BachelorBlog</title>
 </head>
 
-<body class="text-light" style="background-color: #13386C;">
+<body style="background-color: #13386C;">
     <div class="container">
-        <h1 class="mb-1 mt-4">
+        <h1 class="mb-1 mt-4 text-light">
             <%= article.title %>
         </h1>
         <div class="text-muted mb-2">
@@ -20,7 +20,7 @@
         </div>
         <a href="/" class="btn btn-secondary">Tilbake</a>
 
-        <div class="mt-4">
+        <div class="mt-4 bg-white" style="border-radius: 10px;">
             <%- article.sanitizedHtml %>
         </div>
     </div>
