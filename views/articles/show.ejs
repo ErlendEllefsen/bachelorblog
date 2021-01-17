@@ -16,13 +16,16 @@
             <%= article.title %>
         </h1>
         <div class="text-muted mb-2">
-            <%= article.createdAt.toGMTString() %> - <%= article.author %>
+            <%= article.createdAt.toLocaleString("nn") %> - <%= article.author %>
         </div>
-        <a href="/" class="btn btn-secondary">Tilbake</a>
+        <a href="/" class="btn btn-info">Tilbake</a>
 
-        <div class="mt-4 bg-white" style="border-radius: 10px; padding: 10px;">
+        <div class="mt-4 bg-white p-3" style="border-radius: 10px;">
             <%- article.sanitizedHtml %>
         </div>
+        <footer class="container mt-5 text-light">
+            <p>&copy; 2021 Erlend&Robin</p>
+        </footer>
     </div>
 </body>
 

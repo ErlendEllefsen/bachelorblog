@@ -22,18 +22,18 @@
                         <%= article.title %>
                     </h4>
                     <div class="card-subtitle text-muted mb-2">
-                        <%= article.createdAt.toGMTString() %> - <%= article.author %>
+                        <%= article.createdAt.toLocaleString("nn") %> - <%= article.author %>
                     </div>
                     <div class="card-text mb-2">
                         <%= article.description %>
                     </div>
-                    <a href="articles/<%= article.slug %>" class="btn btn-primary">Les Innlegget</a>
+                    <a href="articles/<%= article.slug %>" class="btn btn-primary">Les innlegget</a>
                 </div>
             </div>
             <% }) %>
     </div>
     <footer class="container mt-5">
-        <p class="float-right"><a href="#">Back to top</a></p>
+        <p class="float-right"><a href="#">Tilbake til toppen</a></p>
         <p>&copy; 2021 Erlend&Robin &middot; <a target="_blank"
                 href="https://github.com/ErlendEllefsen/bachelorblog">Github</a></p>
     </footer>
