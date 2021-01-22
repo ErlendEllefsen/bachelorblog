@@ -8,4 +8,6 @@ router.get('/:slug', async (req, res) => {
     res.render('articles/show', { article: article })
 })
 
+
+
 module.exports = router
